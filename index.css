@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-  align-items: center;
+  align-items: middle;
   background-color: #ff4dac;
   display: flex;
   justify-content: center;
