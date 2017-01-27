@@ -1,35 +1,37 @@
+html, body {
+  height: 100%;
+}
+
 body {
-    background-color:#F08080 ;font-size: 400%;font-family: "Times New Roman", Times, serif; 
-.wrap
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translateY(-50%) translateX(-50%)
-ul
-	height: 70px
-	width: 100px
-	display: flex
-	flex-direction: column
-	justify-content: space-between
-	align-items: center
-	transition: all 250ms ease-in-out
-	li
-		width: 100%
-		height: 1px
-		background: #000
-		transition: all 250ms ease-out
-	&:hover
-		height: 100px
-		transform: rotate(90deg) 
-		align-content: space-between
-		justify-content: space-around
-		align-items: center
-		margin-top: 10px
-		li
-			transform-origin: left
-			&:nth-child(1)
-				transform: rotate(45deg) translateX(1px)
-			&:nth-child(2)
-				opacity: 0
-			&:nth-child(3)
-				transform: rotate(-45deg)
+  align-items: center;
+  background-color:#F08080;
+  font-size: 400%;font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-btn {
+  display: block;
+  margin: 1em;
+  width: 36px;
+}
+
+.menu-btn:before,
+.menu-btn:after {
+  background-color: #fff;
+  content: '';
+  display: block;
+  height: 4px;
+  transition: all 200ms ease-in-out;
+}
+.menu-btn:before {
+  box-shadow: 0 10px 0 #fff;
+  margin-bottom: 16px;
+}
+.menu-btn:hover:before {
+  box-shadow: 0 0 0 #fff;
+  transform: translateY(10px) rotate(45deg);
+}
+.menu-btn:hover:after{
+  transform: translateY(-10px) rotate(-45deg);
+}
