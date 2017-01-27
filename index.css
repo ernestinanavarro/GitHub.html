@@ -1,9 +1,6 @@
-html, body {
+body {
   height: 100%; 
   font-size: 400%;font-family: "Times New Roman", Times, serif;
-}
-
-body {
   align-items: center;
   background-color:#F08080;
   display: flex;
