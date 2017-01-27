@@ -1,34 +1,4 @@
 body {
-  height: 100%; 
-  font-size: 400%;font-family: "Times New Roman", Times, serif;
-  align-items: center;
-  background-color:#F08080;
-  display: flex;
-  justify-content: center;
+  font-size: 400%;font-family: "Times New Roman", Times, serif;align-items: center;background-color:#F08080;
 }
-
-.menu-btn {
-  display: block;
-  margin: 1em;
-  width: 36px;
-}
-
-.menu-btn:before,
-.menu-btn:after {
-  background-color: #fff;
-  content: '';
-  display: block;
-  height: 4px;
-  transition: all 200ms ease-in-out;
-}
-.menu-btn:before {
-  box-shadow: 0 10px 0 #fff;
-  margin-bottom: 16px;
-}
-.menu-btn:hover:before {
-  box-shadow: 0 0 0 #fff;
-  transform: translateY(10px) rotate(45deg);
-}
-.menu-btn:hover:after{
-  transform: translateY(-10px) rotate(-45deg);
-}
+  
