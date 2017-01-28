@@ -5,7 +5,7 @@ body
   
   /* make it look decent enough */
   background: #FF69B4;
-  color: #778899;
+  color: #000000;
   font-family: "Avenir Next", "Avenir", sans-serif;
   text-align:middle;
 }
@@ -13,14 +13,14 @@ body
 a
 {
   text-decoration: none;
-  color: #B0C4DE;
+  color: #000000;
   
   transition: color 0.3s ease;
 }
 
 a:hover
 {
-  color: tomato;
+  color:#B0C4DE;
 }
 
 #menuToggle
