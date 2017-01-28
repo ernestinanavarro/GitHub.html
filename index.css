@@ -1,5 +1,70 @@
-body {
-  vertical-align: center;font-size: 400%;font-family: "Times New Roman", Times, serif;background-color: #F08080; 
+@bg-color: #F26F70;
+@txt-color: #FFFFFF;
+@box-color: #FFFFFF;
+@bar-color: #F26F70;
+
+/*** DEMO ***/
+html,body{height:100%;margin:0;}body{background:@bg-color;font:80px monospace;color:@txt-color}p{margin-top:20px}.cntr{display:table;width:100%;height:100%;.cntr-innr{display:table-cell;text-align:center;vertical-align:middle}}
+
+/*** STYLES ***/
+.menu-toggle {
+	display: inline-block;
+	position: relative;
+	width: 51px;
+	height: 51px;
+	background: @box-color;
+	cursor: pointer;
+	
+	.bar {
+		position: absolute;
+		width: 41px;
+		height: 5px;
+		background: @bar-color;
+		transition: all 300ms ease;
+		
+		&:nth-child(1) {
+			left: 5px;
+			top: 10px;
+		}
+		
+		&:nth-child(2) {
+			left: 5px;
+			top: 23px;
+			
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 41px;
+				height: 5px;
+				background: @bar-color;
+				transition: all 300ms ease;
+			}
+		}
+		
+		&:nth-child(3) {
+			right: 5px;
+			top: 36px;
+		}
+	}
+	
+	&:hover {
+		.bar {
+			&:nth-child(1),
+			&:nth-child(3){
+				width: 0;
+			}
+		
+			&:nth-child(2) {
+				transform: rotate(-45deg);
+				
+				&:after {
+					transform: rotate(-90deg);
+				}
+			}
+		}
+	}
 }
 
 
