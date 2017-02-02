@@ -146,8 +146,3 @@ a:hover
   transform: scale(1.0, 1.0);
   opacity: 1;
 }
-a { 
-  margin: auto;
-  font-size: 50px;
-  font-weight: bold;
-}
