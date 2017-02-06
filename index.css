@@ -9,7 +9,12 @@ body
   font-family: "Brush Script MT", cursive;
   text-align:middle;
 }
-
+p
+{
+  font-family: font-family: "Brush Script MT", cursive
+  color: #FFFAFA;
+  text-align:middle;
+}
 a
 {
   text-decoration: none;
