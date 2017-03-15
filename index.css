@@ -9,6 +9,10 @@ body
   font-family: "Brush Script MT",cursive;
   text-align:middle;
 }
+p
+{
+  text-align:center
+}
 h1
 {
   font-family: font-family: "Brush Script MT", cursive
