@@ -8,6 +8,8 @@ body
 }
 p
 {
+  font-family: "Lucida Console", Monaco, monospace
+  font-size: 150%
   text-align:center
 }
 h1
